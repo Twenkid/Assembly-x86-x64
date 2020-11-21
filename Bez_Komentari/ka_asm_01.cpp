@@ -20,10 +20,10 @@ int Sum(int v, int* p, int& r) {
 int main(){
   system("chcp 1251");
   int x, y, z, s;
-  cout << "òğè öåëè ÷èñëà: ";
+  cout << "Ñ‚Ñ€Ğ¸ Ñ†ĞµĞ»Ğ¸ Ñ‡Ğ¸ÑĞ»Ğ°: ";
   cin >> x >> y >> z;
   s = x + y + z;
-  cout << "ñóìà: " << s << endl;
+  cout << "ÑÑƒĞ¼Ğ°: " << s << endl;
   __asm {
     push eax
       mov eax, x
@@ -32,8 +32,8 @@ int main(){
       mov s, eax
     pop eax
   }
-  cout << "ñóìà: " << s << endl;
-  cout << "ñóìà: " << Sum(x,&y,z) << endl;
+  cout << "ÑÑƒĞ¼Ğ°: " << s << endl;
+  cout << "ÑÑƒĞ¼Ğ°: " << Sum(x,&y,z) << endl;
 
   cout << "\n\n";
   system("pause");
