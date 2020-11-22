@@ -1,10 +1,11 @@
 // примери за асемблерен код
-// намиране на максимума на елементите на масив 
+// намиране на максимума на елементите на масив
+// Източник на кода: ФМИ, ПУ
 
-
-//Допълнителни коментари в кода по-долу:
-//Тодор "Twenkid" Арнаудов
-//http://artificial-mind.blogspot.bg
+// Допълнителни коментари в кода по-долу:
+// Тодор "Twenkid" Арнаудов
+// http://artificial-mind.blogspot.com
+// http://twenkid.com
 //je - jump Equal
 //jge -- jump Greater or Equal
 //jb - jump Below
