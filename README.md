@@ -4,6 +4,10 @@
 
 AVX2, AVX, SSE ... intrinsics, built-in ASM in C++, GCC/G++ tests etc.
 
+* asm -- incluse asm in MS Visual Studio, call a function printf  23-10-2022
+* intrinsics - AVX2 examples etc.  23-10-2022
+
+
 Compile with command line compiler of MS Visual Studio:
 x86 Native Tools ...
 
@@ -13,7 +17,10 @@ Developer Command Prompt...
 
 ![image](https://user-images.githubusercontent.com/23367640/197369736-881c720c-915f-4f50-8ff9-fcaad2215150.png)
 
+``` 
 Z:\c>cl asm.cpp /link /out:program1.exe
+```
+
 ```batch
 Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x86
 Copyright (C) Microsoft Corporation.  All rights reserved.
