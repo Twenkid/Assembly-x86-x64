@@ -8,9 +8,23 @@ AVX2, AVX, SSE ... intrinsics, built-in ASM in C++, GCC/G++ tests etc.
 * intrinsics - AVX2 examples etc.  23-10-2022
 
 
+## GCC/G++
+
+```
+g++ -S m.cpp --> Assembly
+g++ m.cpp --> a.out  ./a.out
+g++ -o run m.cpp --> ./run
+g++ --version
+-Os  - optimize for size
+-O2  - optimize for speed
+- f... align ... 
+gcc asm.cpp -mavx2 -lstdc++ -o asm
+g++ asm.cpp -mavx2 -o asm
+```
+
+
 Compile with command line compiler of MS Visual Studio:
 x86 Native Tools ...
-
 x86_64 Cross Tools ...
 
 Developer Command Prompt... 
