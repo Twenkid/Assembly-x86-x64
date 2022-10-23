@@ -1,4 +1,39 @@
 # Assembly-Examples
+
+## 2022
+
+AVX2, AVX, SSE ... intrinsics, built-in ASM in C++, GCC/G++ tests etc.
+
+Compile with command line compiler of MS Visual Studio:
+x86 Native Tools ...
+
+x86_64 Cross Tools ...
+
+Developer Command Prompt... 
+
+![image](https://user-images.githubusercontent.com/23367640/197369736-881c720c-915f-4f50-8ff9-fcaad2215150.png)
+
+Z:\c>cl asm.cpp /link /out:program1.exe
+```batch
+Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30133 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+asm.cpp
+
+Microsoft (R) Incremental Linker Version 14.29.30133.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:asm.exe
+/out:program1.exe
+asm.obj
+
+Z:\c>program1
+Hello world
+
+Z:\c>
+```
+
+## 2017
+
 Примерен код на Асемблер за x86 с обяснения на български език (вбъдеще може би и x64 и др.)
 
 Източник на кода: ФМИ, ПУ
