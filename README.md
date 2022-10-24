@@ -5,8 +5,17 @@
 AVX2, AVX, SSE ... intrinsics, built-in ASM in C++, GCC/G++ tests etc.
 
 * asm -- incluse asm in MS Visual Studio, call a function printf  23-10-2022
-* intrinsics - AVX2 examples etc.  23-10-2022
+* intrinsics - AVX2 examples etc.  23-10-2022+
 
+x86 Native Tools Command Prompt
+
+#W -- warnings
+
+```
+Z:\c>cl /W4 m.cpp /link /out:m.exe
+
+m -->
+```
 
 ## GCC/G++
 
