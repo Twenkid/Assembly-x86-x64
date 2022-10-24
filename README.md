@@ -13,9 +13,22 @@ x86 Native Tools Command Prompt
 
 ```
 Z:\c>cl /W4 m.cpp /link /out:m.exe
-
 m -->
+
+cl file1.cpp file2.cpp file3.cpp /link /out:p.exe
+
+cl /EHsc file1.cpp file2.cpp file3.cpp /link /out:p.exe   //Exception handling, standard
+
+cl file1.cpp file2.cpp file3.cpp /link /out:p.exe
+
+cl file1.cpp file2.cpp file3.cpp /link /out:p.exe
+
+cl haha.cpp jsd.cpp efjewf.h /link  --> haha.exe
+cl /?
+
 ```
+
+
 
 ## GCC/G++
 
