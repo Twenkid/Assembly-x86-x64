@@ -27,7 +27,17 @@ cl haha.cpp jsd.cpp efjewf.h /link  --> haha.exe
 cl /?
 
 ```
+General cl:
 
+```bash
+Compile and link:
+cl /c main.cpp
+cl /c odr1.cpp
+cl /c odr2.cpp
+cl /Feodr.exe main.obj odr1.obj odr2.obj
+
+/Fe - force exe ... odr.exe
+```
 
 
 ## GCC/G++
