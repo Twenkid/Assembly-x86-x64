@@ -3,6 +3,31 @@
 
 ## 2025, Note 2.7.2025
 
+* MASM, Native ... ml, ml64 command line
+2019 ... Dev tools ... Native console ... VS2019 etc.
+
+https://learn.microsoft.com/en-us/cpp/assembler/masm/ml-and-ml64-command-line-reference?view=msvc-170
+
+ml.exe /Fo a1.obj /c a.asm /Fo b1.obj /c b.asm
+
+env.vars:
+INCLUDE	Specifies search path for include files.
+ML	Specifies default command-line options.
+TMP	Specifies path for temporary files.
+
+/Zs	Performs a syntax check only.
+/help
+/I pathname	Sets path for include file. A maximum of 10 /I options is allowed.
+/F hexnum	Sets stack size to hexnum bytes (the same as /link /STACK:<number>). The value must be expressed in hexadecimal notation. There must be a space between /F and hexnum.
+/EP	Generates a preprocessed source listing (sent to STDOUT). See /Sf.
+/AT	Enables tiny-memory-model support. Enables error messages for code constructs that violate the requirements for .com format files. This option isn't equivalent to the .MODEL TINY directive.
+Not available in ml64.exe.
+/Bl filename	Selects an alternate linker in filename.
+
+/coff	Generates common object file format (COFF) type of object module. Required for Win32 assembly language development.
+Not available in ml64.exe.
+
+
 * Bit manipulation instructions x86
 
 https://claude.ai/chat/08d46e2d-6e2f-469d-987e-9bd4d61a2ecf
@@ -13,6 +38,41 @@ https://defuse.ca/online-x86-assembler.htm#disassembly
 
 https://defuse.ca/online-x86-assembler.htm#disassembly
 
+
+* Understanding Windows x64 Assembly - a long tutorial
+https://sonictk.github.io/asm_tutorial/
+
+NASM syntax:
+"""
+bits 64
+default rel
+
+segment .data
+    msg db "Hello world!", 0xd, 0xa, 0
+
+segment .text
+global main
+extern ExitProcess
+
+extern printf
+
+main:
+    push    rbp
+    mov     rbp, rsp
+    sub     rsp, 32
+
+    lea     rcx, [msg]
+    call    printf
+
+    xor     rax, rax
+    call    ExitProcess
+    
+nasm -f win64 -o hello_world.obj hello_world.asm
+link hello_world.obj /subsystem:console /entry:main /out:hello_world_basic.exe
+hello_world_basic.exe
+Hello world!
+
+"""
 
 ## 2022
 
