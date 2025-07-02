@@ -1,4 +1,18 @@
-# Assembly-Examples
+# Assembly-Examples Exercises Projects x86 x64 
+# Disassembly - Debugging - ... 
+
+## 2025, Note 2.7.2025
+
+* Bit manipulation instructions x86
+
+https://claude.ai/chat/08d46e2d-6e2f-469d-987e-9bd4d61a2ecf
+https://claude.ai/share/0fc3cd0f-5699-433d-af44-095ce0265601
+
+*  Online Assembler & Disassembler 
+https://defuse.ca/online-x86-assembler.htm#disassembly
+
+https://defuse.ca/online-x86-assembler.htm#disassembly
+
 
 ## 2022
 
