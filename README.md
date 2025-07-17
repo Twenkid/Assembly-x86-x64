@@ -3,7 +3,7 @@
 
 ###
 x64Dbg ... plugin
-Multiline Assembly
+Multiline Ultimate Assembly 
 @label1:
    MOV EAX, 4
    RETN
@@ -12,6 +12,21 @@ The nearest preceding anonymous label is referred to as: @b  (before) or @r
 The nearest following anonymous label is referred to as:  @f
 
 (Apply the idea for Vsy Assembly: when BEQ -1 f ..? when adding ... --> see... (or/and first add some data structures to simplify the jobs! at least a stack and or a graph?, note 18.7.2025)
+
+..
+```
+cpp\2025
+asm6a X64
+-- xmm0, xmm1, xmm2, xmm3 ...
+printf calling convention Win64 ...
+...
+asmijit library
+asmjit1...
+
+x64dbg
+Z:\snapshot_2025-03-15_15-57\release\x64>
+x64dbg
+```
 
 ..
 
