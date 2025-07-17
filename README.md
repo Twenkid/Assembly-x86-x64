@@ -1,6 +1,20 @@
 # Assembly-Examples Exercises Projects x86 x64 
 # Disassembly - Debugging - ... 
 
+###
+x64Dbg ... plugin
+Multiline Assembly
+@label1:
+   MOV EAX, 4
+   RETN
+
+The nearest preceding anonymous label is referred to as: @b  (before) or @r
+The nearest following anonymous label is referred to as:  @f
+
+(Apply the idea for Vsy Assembly: when BEQ -1 f ..? when adding ... --> see... (or/and first add some data structures to simplify the jobs! at least a stack and or a graph?, note 18.7.2025)
+
+..
+
 ## 2025, Note 2.7.2025
 
 * MASM, Native ... ml, ml64 command line
